@@ -3,6 +3,7 @@ package com.hall.booking.system.services;
 import com.hall.booking.system.models.User;
 import com.hall.booking.system.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -62,6 +63,7 @@ public class UserService {
         updateUser.setUsername(user.getUsername());
         updateUser.setPhoneNumber(user.getPhoneNumber());
         return userRepository.save(updateUser);
+
     }
 
     public void deleteUser(long userId) {

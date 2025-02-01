@@ -2,7 +2,6 @@ package com.hall.booking.system;
 
 import com.hall.booking.system.models.User;
 import com.hall.booking.system.repository.UserRepository;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +12,6 @@ public class HallBookingApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HallBookingApplication.class, args);
 	}
-
 	//@Bean
 	public User insertAdmin(UserRepository userRepository) {
 		User admin = new User();
