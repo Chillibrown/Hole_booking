@@ -15,6 +15,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/hall-booking-system.jar /app/hall-booking-system.jar
-CMD ["java", "-jar", "/app/hall-booking-system.jar"]
+COPY --from=build /app/target/HALL-BOOKING-SYSTEM.jar /app/HALL-BOOKING-SYSTEM.jar
+CMD ["java", "-jar", "/app/HALL-BOOKING-SYSTEM.jar"]
 
