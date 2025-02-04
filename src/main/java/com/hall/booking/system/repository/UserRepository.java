@@ -17,3 +17,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query("SELECT COUNT(*) FROM User")
     Integer getTotalUsers();
 }
+// gmvbm
