@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 200
 
 spring:
   application:
@@ -16,8 +16,33 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
+        transaction:
+          jta:
+            platform: org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform
+
+
+# server:
+#   port: 8080
+
+# spring:
+#   application:
+#     name: crud-operation
+
+#   datasource:
+#     url: jdbc:mysql://localhost:3306/hall_booking
+#     username: root
+#     password: nassir@123
+
+#   jpa:
+#     show-sql: true
+#     hibernate:
+#       ddl-auto: update
+#     properties:
+#       hibernate:
+#         dialect: org.hibernate.dialect.MySQLDialect
+#         format_sql: true
 
 
 # server:
