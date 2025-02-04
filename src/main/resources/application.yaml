@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-  name: crud-operation
+    name: crud-operation
 
   datasource:
     url: jdbc:mysql://localhost:3306/hall_booking
@@ -15,6 +15,28 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      dialect: org.hibernate.dialect.MuSQL8Dialect
-      format_sql: true
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+
+# server:
+#   port: 2003
+
+# spring:
+#   application:
+#   name: crud-operation
+
+#   datasource:
+#     url: jdbc:mysql://localhost:3306/hall_booking
+#     username: root
+#     password: nassir@123
+
+#   jpa:
+#     show-sql: true
+#     hibernate:
+#       ddl-auto: update
+#     properties:
+#       dialect: org.hibernate.dialect.MuSQL8Dialect
+#       format_sql: true
 
