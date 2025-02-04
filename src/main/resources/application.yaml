@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
    application:
@@ -28,7 +28,7 @@ spring:
 #  datasource:
 #    url: jdbc:mysql://localhost:3306/hall_booking
 #    username: root
-#    password: nassir@123
+#    password: nassir@123//
 #
 #  jpa:
 #    show-sql: true
