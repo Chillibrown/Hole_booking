@@ -1,12 +1,12 @@
 server:
-  port: 200
+  port: 2002
 
 spring:
   application:
     name: crud-operation
 
   datasource:
-    url: jdbc:mysql://localhost:3306/hall_booking
+    url: jdbc:mysql://localhost:9095/hall_booking
     username: root
     password: nassir@123
 
