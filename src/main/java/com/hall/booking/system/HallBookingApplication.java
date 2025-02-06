@@ -11,7 +11,7 @@ public class HallBookingApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HallBookingApplication.class, args);
 	}
-	@Bean
+	//@Bean
 	public User insertAdmin(UserRepository userRepository) {
 		User admin = new User();
 		admin.setFirstName("Nassir");
