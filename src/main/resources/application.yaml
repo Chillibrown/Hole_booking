@@ -2,21 +2,21 @@ server:
   port: 8080
 
 spring:
-   application:
-   name: crud-operation
+  application:
+  name: crud-operation
 
-   datasource:
-     url: jdbc:mysql://localhost:9095/hall_booking
-     username: root
-     password: nassir@123
+  datasource:
+  url: jdbc:mysql://localhost:9095/hall_booking
+  username: root
+    password: nassir@123
 
-   jpa:
-     show-sql: true
-     hibernate:
-       ddl-auto: update
-     properties:
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      format_sql: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+    dialect: org.hibernate.dialect.MySQL8Dialect
+    format_sql: true
 
 #server:
 #  port: 2002
